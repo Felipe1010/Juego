@@ -1,0 +1,770 @@
+{
+	"name": "Nivel 4",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "vidas4",
+			"type": "number",
+			"initialValue": "2",
+			"comment": "vida del personaje",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 345853645031293
+		},
+		{
+			"eventType": "variable",
+			"name": "monedas4",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "puntos",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 531520414462491
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 699243551010719,
+					"parameters": {
+						"key": 27
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 240147360400247,
+					"parameters": {
+						"layout": "Menu Niveles"
+					}
+				}
+			],
+			"sid": 996449338121899
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 453151411825017,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "morraco",
+					"sid": 520077358310476,
+					"behaviorType": "Plataforma",
+					"parameters": {
+						"control": "right"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "morraco",
+					"sid": 774779968780394,
+					"parameters": {
+						"animation": "\"correr\"",
+						"from": "current-frame"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "morraco",
+					"sid": 683234895012439,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 340986316629997
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 104318435330208,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "morraco",
+					"sid": 626927184973818,
+					"behaviorType": "Plataforma",
+					"parameters": {
+						"control": "left"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "morraco",
+					"sid": 156596507288564,
+					"parameters": {
+						"animation": "\"correr\"",
+						"from": "current-frame"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "morraco",
+					"sid": 309217045356834,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 832545272875615
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 170489108228509,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "morraco",
+					"sid": 769529641153881,
+					"behaviorType": "Plataforma",
+					"parameters": {
+						"control": "jump"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "morraco",
+					"sid": 726981714205437,
+					"parameters": {
+						"animation": "\"saltando\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 450878264254465
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-floor",
+					"objectClass": "morraco",
+					"sid": 506036572944136,
+					"behaviorType": "Plataforma"
+				},
+				{
+					"id": "is-moving",
+					"objectClass": "morraco",
+					"sid": 381133801629991,
+					"behaviorType": "Plataforma",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "morraco",
+					"sid": 207840656351393,
+					"parameters": {
+						"animation": "\"quieto\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 566876666146323
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "morraco",
+					"sid": 622076378603284,
+					"parameters": {
+						"object": "moneda"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 890855847471155,
+					"parameters": {
+						"variable": "monedas",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "contador",
+					"sid": 190385017519958,
+					"parameters": {
+						"text": "monedas"
+					}
+				}
+			],
+			"sid": 324399035666233,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 531162379494299
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "moneda",
+							"sid": 610414827391885
+						}
+					],
+					"sid": 273205836578894
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite4",
+					"sid": 449963839406739,
+					"parameters": {
+						"object": "morraco"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 764048821320468,
+					"parameters": {
+						"layout": "Nivel 5"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 823102188935617,
+					"parameters": {
+						"variable": "vidas5",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 186379243799816
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "morraco",
+					"sid": 612246102450433,
+					"parameters": {
+						"object": "mounstruo"
+					}
+				},
+				{
+					"id": "compare-opacity",
+					"objectClass": "morraco",
+					"sid": 278885405237960,
+					"parameters": {
+						"comparison": 0,
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 366920286934603,
+					"parameters": {
+						"variable": "salud",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 522978592021011,
+					"parameters": {
+						"variable": "salud",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "morraco",
+					"sid": 952395204265369,
+					"parameters": {
+						"opacity": "50"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 855975886861556,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "morraco",
+					"sid": 832869398273515,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite5",
+					"sid": 949519503459520,
+					"parameters": {
+						"animation": "\"corazon m\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 994775820530626
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "morraco",
+					"sid": 415788074675756,
+					"parameters": {
+						"object": "mounstruo"
+					}
+				},
+				{
+					"id": "compare-opacity",
+					"objectClass": "morraco",
+					"sid": 381975914703921,
+					"parameters": {
+						"comparison": 0,
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 964467414695603,
+					"parameters": {
+						"variable": "salud",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 965999855039950,
+					"parameters": {
+						"variable": "salud",
+						"value": "2"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 573094125787143,
+					"parameters": {
+						"variable": "salud",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "morraco",
+					"sid": 733605161752849,
+					"parameters": {
+						"opacity": "50"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 948221820438421,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "morraco",
+					"sid": 962410422629561,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite5",
+					"sid": 213452853582824,
+					"parameters": {
+						"animation": "\"corazon n\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 246851889503470,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 931247753404311,
+							"parameters": {
+								"variable": "salud",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 338784247688397
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 122872482506150,
+							"parameters": {
+								"variable": "salud",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 478898849515030
+				}
+			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "mounstruo4",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-mirrored",
+							"objectClass": "mounstruo",
+							"sid": 246537698909511,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-vector-x",
+							"objectClass": "mounstruo",
+							"sid": 126176042759581,
+							"behaviorType": "Plataforma",
+							"parameters": {
+								"vector-x": "-110"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 156518489614578,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "mounstruo",
+							"sid": 498441660141413,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 376520749587432,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-jumping",
+									"objectClass": "mounstruo",
+									"sid": 458368947353231,
+									"behaviorType": "Plataforma"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-ignoring-input",
+									"objectClass": "mounstruo",
+									"sid": 865821952312856,
+									"behaviorType": "Plataforma",
+									"parameters": {
+										"input": "start-ignoring"
+									}
+								}
+							],
+							"sid": 590117040952174
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-mirrored",
+							"objectClass": "mounstruo",
+							"sid": 501502905842604
+						}
+					],
+					"actions": [
+						{
+							"id": "set-vector-x",
+							"objectClass": "mounstruo",
+							"sid": 439448539818628,
+							"behaviorType": "Plataforma",
+							"parameters": {
+								"vector-x": "110"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 575358893755669,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "mounstruo",
+							"sid": 622072334753398,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 970126616412754,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-jumping",
+									"objectClass": "mounstruo",
+									"sid": 666736479289897,
+									"behaviorType": "Plataforma"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "mounstruo",
+									"sid": 737404938490742,
+									"behaviorType": "Personalizado",
+									"parameters": {
+										"state": "disabled"
+									}
+								}
+							],
+							"sid": 217253788086103
+						}
+					]
+				}
+			],
+			"sid": 688698775637467
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "informacion4",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "pregunta7",
+							"sid": 241362252817089,
+							"parameters": {
+								"object": "morraco"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "pregunta7",
+							"sid": 460054049146392
+						},
+						{
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 940905712895149,
+							"parameters": {
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "p7",
+							"sid": 944104450415058,
+							"parameters": {
+								"animation": "\"pp7.2\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 947636458253941
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "pregunta8",
+							"sid": 746377342387097,
+							"parameters": {
+								"object": "morraco"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "pregunta8",
+							"sid": 852408071374908
+						},
+						{
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 335401063083816,
+							"parameters": {
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "p8",
+							"sid": 101219343335866,
+							"parameters": {
+								"animation": "\"pp8.2\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 781694546874093
+				}
+			],
+			"sid": 107477260383210
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 824199054930253,
+					"parameters": {
+						"key": 49
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 244446278985849,
+					"parameters": {
+						"time-scale": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "p7",
+					"sid": 153672146809489,
+					"parameters": {
+						"animation": "\"pp7.1\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 628009135779475
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 387935595533481,
+					"parameters": {
+						"key": 50
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 488372690110516,
+					"parameters": {
+						"time-scale": "1.0"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "p8",
+					"sid": 796636014870554,
+					"parameters": {
+						"animation": "\"pp8.1\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 120130299443806
+		}
+	],
+	"sid": 513603771426976
+}

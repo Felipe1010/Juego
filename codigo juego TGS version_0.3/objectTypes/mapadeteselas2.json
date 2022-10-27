@@ -1,0 +1,27 @@
+{
+	"name": "MapaDeTeselas2",
+	"plugin-id": "Tilemap",
+	"sid": 547452632304736,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 677240527440004
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 515,
+		"height": 203,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 3578043,
+		"useCollisionPoly": true
+	},
+	"tile-collision-polys": {}
+}

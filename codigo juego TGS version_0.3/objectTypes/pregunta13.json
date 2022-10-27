@@ -1,0 +1,192 @@
+{
+	"name": "pregunta13",
+	"plugin-id": "Sprite",
+	"sid": 973518389578449,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "texto1",
+			"type": "string",
+			"desc": "",
+			"sid": 157085446973538
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.4444444444444444,
+						"originY": 0.4444444444444444,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9348018,
+						"collisionPoly": {
+							"points": [
+								0.09722222222222215,
+								0.12499999999999994,
+								0.4583333333333333,
+								0.055555555555555546,
+								0.9444444444444438,
+								0.08333333333333333,
+								0.9166666666666664,
+								0.4305555555555555,
+								0.8749999999999994,
+								0.8611111111111105,
+								0.4861111111111111,
+								0.9444444444444443,
+								0.055555555555555546,
+								0.9027777777777775,
+								0.08333333333333333,
+								0.4583333333333333
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8289211,
+						"collisionPoly": {
+							"points": [
+								0.25,
+								0.25,
+								0.5,
+								0.15625,
+								0.75,
+								0.21875,
+								0.65625,
+								0.5,
+								0.6875,
+								0.6875,
+								0.5,
+								0.71875,
+								0.28125,
+								0.6875,
+								0.28125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9652158,
+						"collisionPoly": {
+							"points": [
+								0.25,
+								0.25,
+								0.5,
+								0.15625,
+								0.75,
+								0.21875,
+								0.65625,
+								0.5,
+								0.6875,
+								0.6875,
+								0.5,
+								0.71875,
+								0.28125,
+								0.6875,
+								0.28125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 243374,
+						"collisionPoly": {
+							"points": [
+								0.25,
+								0.25,
+								0.5,
+								0.15625,
+								0.75,
+								0.21875,
+								0.65625,
+								0.5,
+								0.6875,
+								0.6875,
+								0.5,
+								0.71875,
+								0.28125,
+								0.6875,
+								0.28125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3778563,
+						"collisionPoly": {
+							"points": [
+								0.25,
+								0.25,
+								0.5,
+								0.15625,
+								0.75,
+								0.21875,
+								0.65625,
+								0.5,
+								0.6875,
+								0.6875,
+								0.5,
+								0.71875,
+								0.28125,
+								0.6875,
+								0.28125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 424939607262363,
+				"name": "pregunta",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

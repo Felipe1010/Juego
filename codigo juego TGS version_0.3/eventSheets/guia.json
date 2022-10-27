@@ -1,0 +1,40 @@
+{
+	"name": "Guia",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Variable1",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 211805147174780
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 760786730198964,
+					"parameters": {
+						"key": 27
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 884259243649794,
+					"parameters": {
+						"layout": "Menu inicio"
+					}
+				}
+			],
+			"sid": 502587154950422
+		}
+	],
+	"sid": 474806820209781
+}

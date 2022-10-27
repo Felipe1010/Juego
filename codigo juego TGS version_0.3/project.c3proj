@@ -1,0 +1,491 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 30200,
+	"name": "TGS-2022",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Teclado",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Texto",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "SVGPicture",
+			"name": "Imagen SVG",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Fondo en mosaico",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Mapa de teselas",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Fuente Sprite",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "UserMedia",
+			"name": "Multimedia",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direcciones",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Plataforma",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Desplazar hasta",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Sólido",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "custom",
+			"name": "Personalizado",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Anchor",
+			"name": "Ancla",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "colorblend",
+			"name": "Color",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		}
+	],
+	"uniqueId": "qofo6w0nipz",
+	"objectTypes": {
+		"items": [
+			"Mouse",
+			"Teclado",
+			"Sprite",
+			"titulo",
+			"Texto3",
+			"ImagenSVG",
+			"FondoEnMosaico",
+			"Sprite2",
+			"play",
+			"guia",
+			"configuracion",
+			"FondoEnMosaico2",
+			"FondoEnMosaico3",
+			"Nivel1",
+			"nivel2",
+			"nivel3",
+			"nivel4",
+			"nivel5",
+			"nivel6",
+			"nivel7",
+			"nivel8",
+			"Audio",
+			"musica",
+			"Sprite3",
+			"FondoEnMosaico4",
+			"FondoEnMosaico5",
+			"menuinicio",
+			"personajeConMovimiento",
+			"morraco",
+			"FondoEnMosaico6",
+			"MapaDeTeselas",
+			"FuenteSprite",
+			"Sprite4",
+			"moneda",
+			"textoN1",
+			"pregunta",
+			"mounstruo",
+			"Sprite5",
+			"puntos",
+			"contador",
+			"fondoN2",
+			"MapaDeTeselas2",
+			"ImagenSVG2",
+			"Multimedia",
+			"ImagenSVG3",
+			"FondoEnMosaico7",
+			"MapaDeTeselas3",
+			"FondoEnMosaico8",
+			"FondoEnMosaico9",
+			"FondoEnMosaico10",
+			"FondoEnMosaico11",
+			"FondoEnMosaico12",
+			"MapaDeTeselas4",
+			"MapaDeTeselas5",
+			"MapaDeTeselas6",
+			"MapaDeTeselas7",
+			"MapaDeTeselas8",
+			"texto1",
+			"FondoEnMosaico13",
+			"Texto4",
+			"Texto5",
+			"AA",
+			"BB",
+			"CC",
+			"Sprite6",
+			"FondoEnMosaico14",
+			"FINDELJUEGO",
+			"Texto6",
+			"Sprite7",
+			"CASA",
+			"Sprite8",
+			"ACA",
+			"FondoEnMosaico15",
+			"Sprite9",
+			"fin",
+			"Sprite10",
+			"FondoEnMosaico16",
+			"FondoEnMosaico17",
+			"tituloins",
+			"tituloiunstes",
+			"Texto",
+			"pregunta2",
+			"pregunta3",
+			"pregunta4",
+			"pregunta5",
+			"pregunta6",
+			"pregunta7",
+			"pregunta8",
+			"pregunta9",
+			"pregunta10",
+			"pregunta11",
+			"pregunta12",
+			"pregunta13",
+			"pregunta14",
+			"pregunta15",
+			"pregunta16",
+			"pregunta17",
+			"totalpuntaje",
+			"lavaDos",
+			"LavaUno",
+			"transportar",
+			"ImagenSVG4",
+			"p1",
+			"p2",
+			"p3",
+			"p4",
+			"p5",
+			"p6",
+			"p7",
+			"p8",
+			"p9",
+			"p10",
+			"p11",
+			"p12",
+			"p14",
+			"p15",
+			"p16",
+			"p17",
+			"p13",
+			"MapaDeTeselas10",
+			"saliratras"
+		],
+		"subfolders": []
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Menu inicio",
+			"Menu Niveles",
+			"Guia",
+			"Configuracion",
+			"Nivel 1",
+			"Nivel 2",
+			"Nivel 3",
+			"Nivel 4",
+			"Nivel 5",
+			"Nivel 6",
+			"Nivel 7",
+			"Nivel 8",
+			"FIN"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"Nivel 1",
+			"Menu inicio",
+			"Menu Niveles",
+			"Guia",
+			"Configuracion",
+			"Nivel 2",
+			"Nivel 3",
+			"Nivel 4",
+			"Nivel 5",
+			"Nivel 6",
+			"Nivel 7",
+			"Nivel 8",
+			"musica",
+			"FIN"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [],
+			"subfolders": []
+		},
+		"music": {
+			"items": [
+				{
+					"name": "y2mate.com - Coward  Hans Zimmer  Interstellar tribute.mp3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 352006598209968,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "cancion abse de los niveles.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 532108696725711,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "y2mate.com - The Dark Knight Main Theme  Hans Zimmer (1).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 131810187008209,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icono-16.png",
+					"type": "image/png",
+					"sid": 142618891683502,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icono-32.png",
+					"type": "image/png",
+					"sid": 637537653905455,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icono-64.png",
+					"type": "image/png",
+					"sid": 478126442967781,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icono-128.png",
+					"type": "image/png",
+					"sid": 128317749900399,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icono-256.png",
+					"type": "image/png",
+					"sid": 745872253338524,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icono-512.png",
+					"type": "image/png",
+					"sid": 840094676310022,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "logo-carga.png",
+					"type": "image/png",
+					"sid": 478870780479112,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Línea de tiempo 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": false,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "trilinear",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https"
+	},
+	"viewportWidth": 854,
+	"viewportHeight": 480,
+	"firstLayout": "Menu inicio"
+}

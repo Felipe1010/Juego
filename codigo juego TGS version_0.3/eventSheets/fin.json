@@ -1,0 +1,266 @@
+{
+	"name": "FIN",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 169271705317954,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ACA"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 367318217268073,
+					"parameters": {
+						"layout": "Menu inicio"
+					}
+				}
+			],
+			"sid": 359027579449345
+		},
+		{
+			"eventType": "variable",
+			"name": "monedas9",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "puntos",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 190787945522165
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 883802413855845,
+					"parameters": {
+						"key": 27
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 105440918751631,
+					"parameters": {
+						"layout": "Menu Niveles"
+					}
+				}
+			],
+			"sid": 576315373660763
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 201884163726114,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "morraco",
+					"sid": 211994327549700,
+					"behaviorType": "Plataforma",
+					"parameters": {
+						"control": "right"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "morraco",
+					"sid": 856846431320072,
+					"parameters": {
+						"animation": "\"correr\"",
+						"from": "current-frame"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "morraco",
+					"sid": 138734497533254,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 961532180247221
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 955759643259782,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "morraco",
+					"sid": 312819506374948,
+					"behaviorType": "Plataforma",
+					"parameters": {
+						"control": "left"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "morraco",
+					"sid": 358281180767007,
+					"parameters": {
+						"animation": "\"correr\"",
+						"from": "current-frame"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "morraco",
+					"sid": 178305897650108,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 332704286341832
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 174411094539132,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "morraco",
+					"sid": 299812716048108,
+					"behaviorType": "Plataforma",
+					"parameters": {
+						"control": "jump"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "morraco",
+					"sid": 669231162257962,
+					"parameters": {
+						"animation": "\"saltando\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 757975863669995
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-floor",
+					"objectClass": "morraco",
+					"sid": 659526183908073,
+					"behaviorType": "Plataforma"
+				},
+				{
+					"id": "is-moving",
+					"objectClass": "morraco",
+					"sid": 978926895071095,
+					"behaviorType": "Plataforma",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "morraco",
+					"sid": 528551835503623,
+					"parameters": {
+						"animation": "\"quieto\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 643529322270571
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "morraco",
+					"sid": 432256406151034,
+					"parameters": {
+						"object": "moneda"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "contador",
+					"sid": 419927248802737,
+					"parameters": {
+						"text": "monedas"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "morraco",
+					"sid": 854736377423901,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 585134585023324,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 434669034785883
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "moneda",
+							"sid": 510074850055484
+						}
+					],
+					"sid": 856041710296963
+				}
+			]
+		}
+	],
+	"sid": 799398200698302
+}

@@ -1,0 +1,57 @@
+{
+	"name": "ACA",
+	"plugin-id": "Sprite",
+	"sid": 924286545147763,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 311,
+						"height": 162,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8379077,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.9967845659163987,
+								0,
+								0.9967845659163987,
+								0.5,
+								0.9967845659163987,
+								0.9938271604938271,
+								0.5,
+								0.9938271604938271,
+								0,
+								0.9938271604938271,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 130100190378824,
+				"name": "Animación 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"name": "fondoN2",
+	"plugin-id": "TiledBg",
+	"sid": 768370698901231,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 1691,
+		"height": 1837,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 5155483,
+		"useCollisionPoly": true
+	}
+}

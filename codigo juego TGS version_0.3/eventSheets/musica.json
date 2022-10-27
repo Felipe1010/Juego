@@ -1,0 +1,138 @@
+{
+	"name": "musica",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Musica_pn",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 889254185756010
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 730113794003639,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "musica"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 611699635061199,
+					"parameters": {
+						"variable": "Musica_pn",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 548928617771612
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 555195847048069,
+					"parameters": {
+						"variable": "Musica_pn",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "musica",
+					"sid": 693087996627046,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-silent",
+					"objectClass": "Audio",
+					"sid": 365963111092973,
+					"parameters": {
+						"mode": "not-silent"
+					}
+				}
+			],
+			"sid": 107792284953930
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 102536743124036,
+					"parameters": {
+						"variable": "Musica_pn",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "musica",
+					"sid": 969700403359696,
+					"parameters": {
+						"frame-number": "1"
+					}
+				},
+				{
+					"id": "set-silent",
+					"objectClass": "Audio",
+					"sid": 625173649734156,
+					"parameters": {
+						"mode": "silent"
+					}
+				}
+			],
+			"sid": 198887215143506
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 278916219378722,
+					"parameters": {
+						"variable": "Musica_pn",
+						"comparison": 4,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 998045644619086,
+					"parameters": {
+						"variable": "Musica_pn",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 537680559519293
+		}
+	],
+	"sid": 486057826369094
+}

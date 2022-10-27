@@ -1,0 +1,15 @@
+{
+	"name": "texto1",
+	"plugin-id": "Text",
+	"sid": 555541301961619,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Ancla",
+			"sid": 604718568471399
+		}
+	],
+	"effectTypes": []
+}

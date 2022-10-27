@@ -1,0 +1,120 @@
+{
+	"name": "Menu inicio",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 710572852582971,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "play"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 926809402577692,
+					"parameters": {
+						"layout": "Menu Niveles"
+					}
+				}
+			],
+			"sid": 544411457747093
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 606889747645685,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "guia"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 210740345524942,
+					"parameters": {
+						"layout": "Guia"
+					}
+				}
+			],
+			"sid": 885443087438209
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 413608163554287,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "configuracion"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 866807496376741,
+					"parameters": {
+						"layout": "Configuracion"
+					}
+				}
+			],
+			"sid": 486547140943949
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Audio",
+					"sid": 604093034221180,
+					"parameters": {
+						"tag": "\"musica\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 926678932544465,
+					"parameters": {
+						"audio-file": "y2mate.com - Coward  Hans Zimmer  Interstellar tribute.mp3",
+						"loop": "looping",
+						"volume": "30",
+						"tag-optional": "\"musica\""
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 916463348588333,
+					"parameters": {
+						"tag": "\"Menu Niveles\""
+					}
+				}
+			],
+			"sid": 682431723035046
+		}
+	],
+	"sid": 289630497449180
+}

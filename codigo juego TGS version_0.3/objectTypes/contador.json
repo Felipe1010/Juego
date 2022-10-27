@@ -1,0 +1,15 @@
+{
+	"name": "contador",
+	"plugin-id": "Text",
+	"sid": 505779620920866,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Ancla",
+			"sid": 872996743277130
+		}
+	],
+	"effectTypes": []
+}

@@ -1,0 +1,15 @@
+{
+	"name": "puntos",
+	"plugin-id": "Text",
+	"sid": 160718381290317,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Ancla",
+			"sid": 743247660311884
+		}
+	],
+	"effectTypes": []
+}

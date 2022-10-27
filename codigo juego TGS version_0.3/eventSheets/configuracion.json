@@ -1,0 +1,34 @@
+{
+	"name": "Configuracion",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "musica"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 343459756589226,
+					"parameters": {
+						"key": 27
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 574367081572486,
+					"parameters": {
+						"layout": "Menu inicio"
+					}
+				}
+			],
+			"sid": 906269590276152
+		}
+	],
+	"sid": 439702136895653
+}
